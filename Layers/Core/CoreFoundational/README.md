@@ -1,3 +1,5 @@
 # CoreFoundational
 
-A description of this package.
+A foundational package in the Core layer 
+* Contains extensions to apple Foundation framework 
+
