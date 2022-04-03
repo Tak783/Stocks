@@ -26,7 +26,7 @@ struct RemoteStock: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        ticker = try container.decode(String.self, forKey: .lastName)
+        ticker = try container.decode(String.self, forKey: .ticker)
         name = try container.decode(String.self, forKey: .name)
         currency = try container.decode(String.self, forKey: .currency)
         quantity = try container.decode(Int.self, forKey: .quantity)
