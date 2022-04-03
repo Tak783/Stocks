@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Stock {
+public struct Stock {
     let ticker: String
     let name: String
     let currency: String
