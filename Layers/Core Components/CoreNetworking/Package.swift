@@ -8,16 +8,28 @@ let package = Package(
     products: [
         .library(
             name: "CoreNetworking",
-            targets: ["CoreNetworking"]),
+            targets: [
+                "CoreNetworking"
+            ]
+        )
     ],
     dependencies: [
+        .package(name: "CoreFoundational", path: "../Core/CoreFoundational"),
+        .package(name: "CoreTesting", path: "../Core/CoreTesting")
     ],
     targets: [
         .target(
             name: "CoreNetworking",
-            dependencies: []),
+            dependencies: [
+                "CoreFoundational"
+            ]
+        ),
         .testTarget(
             name: "CoreNetworkingTests",
-            dependencies: ["CoreNetworking"]),
+            dependencies: [
+                "CoreNetworking",
+                "CoreTesting"
+            ]
+        ),
     ]
 )
