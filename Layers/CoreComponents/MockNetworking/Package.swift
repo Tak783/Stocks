@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "CoreNetworking",
+    name: "MockNetworking",
     products: [
         .library(
-            name: "CoreNetworking",
+            name: "MockNetworking",
             targets: [
-                "CoreNetworking"
+                "MockNetworking"
             ]
-        )
+        ),
     ],
     dependencies: [
         .package(
@@ -20,22 +20,17 @@ let package = Package(
         ),
         .package(
             name: "CoreTesting",
-            path: "../Core/CoreTesting"
+            path: "../CoreTesting"
         )
     ],
     targets: [
         .target(
-            name: "CoreNetworking",
-            dependencies: [
-                "CoreFoundational"
-            ],
-            path: "Sources/CoreNetworking"
-        ),
+            name: "MockNetworking",
+            dependencies: []),
         .testTarget(
-            name: "CoreNetworkingTests",
+            name: "MockNetworkingTests",
             dependencies: [
-                "CoreNetworking",
-                "CoreTesting"
+                "MockNetworking"
             ]
         ),
     ]
