@@ -14,10 +14,22 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(name: "CoreFoundational", path: "../Core/CoreFoundational"),
-        .package(name: "CoreTesting", path: "../Core/CoreTesting"),
-        .package(name: "CoreNetworking", path: "../CoreComponents/Sources/CoreNetworking"),
-        .package(name: "MockNetworking", path: "../CoreComponents/Sources/MockNetworking")
+        .package(
+            name: "CoreFoundational",
+            path: "../Core/CoreFoundational"
+        ),
+        .package(
+            name: "CoreTesting",
+            path: "../Core/CoreTesting"
+        ),
+        .package(
+            name: "CoreNetworking",
+            path: "../CoreComponents/Sources/CoreNetworking"
+        ),
+        .package(
+            name: "MockNetworking",
+            path: "../CoreComponents/Sources/MockNetworking"
+        )
     ],
     targets: [
         .target(
@@ -30,8 +42,8 @@ let package = Package(
         .testTarget(
             name: "StocksFeedFeatureTests",
             dependencies: [
-                "StocksFeedFeature",
                 "CoreTesting",
+                "StocksFeedFeature",
                 "CoreNetworking",
                 "MockNetworking"
             ],

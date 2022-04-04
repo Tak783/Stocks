@@ -103,7 +103,7 @@ extension RemoteStocksFeedServiceTests {
         }
 
         let data = MockData.any_data(for: MockData.FileName.stocksFeed.rawValue, fromBundle: Bundle.module)
-        let expectedResponse = try! JSONDecoder().decode(TestRemoteStockFeed.self, from: data)
+        let expectedResponse = try! JSONDecoder().decode(TestRemoteStocksFeed.self, from: data)
         client.complete(withStatusCode: 200, data: data)
         wait(for: [exp], timeout: 1.0)
         XCTAssertEqual(returnedStocks, expectedResponse.stocks.toModels())

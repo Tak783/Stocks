@@ -5,6 +5,6 @@
 //  Created by Tak Mazarura on 04/04/2022.
 //
 
-struct TestRemoteStockFeed: Decodable {
+struct TestRemoteStocksFeed: Decodable {
     let stocks: [TestRemoteStock]
 }
