@@ -11,7 +11,7 @@ struct RemoteStock: Decodable {
     let ticker: String
     let name: String
     let currency: String
-    let quantity: Int
+    let quantity: Int?
     let currentPriceCents: Int
     let currentPriceTimeStamp: Int
     
@@ -29,7 +29,7 @@ struct RemoteStock: Decodable {
         ticker = try container.decode(String.self, forKey: .ticker)
         name = try container.decode(String.self, forKey: .name)
         currency = try container.decode(String.self, forKey: .currency)
-        quantity = try container.decode(Int.self, forKey: .quantity)
+        quantity = try container.decodeIfPresent(Int.self, forKey: .quantity)
         currentPriceCents = try container.decode(Int.self, forKey: .currentPriceCents)
         currentPriceTimeStamp = try container.decode(Int.self, forKey: .currentPriceTimeStamp)
     }

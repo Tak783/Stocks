@@ -7,12 +7,15 @@
 //
 
 import Foundation
+import MockNetworking
 
 public final class MockData {
     public enum FileName: String {
-        case badJSON = "BadJSON"
-        case recipe = "Recipe"
-        case recipesFeed = "RecipesFeed"
+        case stock = "Stock"
+        case stocksFeed = "StocksFeed"
+        case emptyStocksFeed = "EmptyStocksFeed"
+        case malformedStocksFeed = "MalformedStocksFeed"
+        case malformedJSON = "MalformedJSON"
     }
 
     public static var mockNetworkingBundle: Bundle {
@@ -22,10 +25,10 @@ public final class MockData {
 
 extension MockData {
     public static func any_badJSONData() -> Data {
-        return MockServer.loadLocalJSON(FileName.badJSON.rawValue, fromBundle: MockData.mockNetworkingBundle)
+        return any_data(for: MockData.FileName.malformedJSON.rawValue, fromBundle: Bundle.module)
     }
 
-    public static func any_data(for filename: String, fromBundle bundle: Bundle = MockData.mockNetworkingBundle) -> Data {
+    public static func any_data(for filename: String, fromBundle bundle: Bundle) -> Data {
         return MockServer.loadLocalJSON(filename, fromBundle: bundle)
     }
 }

@@ -21,17 +21,22 @@ let package = Package(
         .package(
             name: "CoreTesting",
             path: "../CoreTesting"
-        )
+        ),
+        .package(
+            name: "CoreNetworking",
+            path: "../CoreComponents/Sources/CoreNetworking"
+        ),
     ],
     targets: [
         .target(
             name: "MockNetworking",
-            dependencies: []),
-        .testTarget(
-            name: "MockNetworkingTests",
             dependencies: [
-                "MockNetworking"
+                "CoreFoundational",
+                "CoreNetworking"
+            ],
+            resources: [
+                .process("Resources")
             ]
-        ),
+        )
     ]
 )
