@@ -16,7 +16,8 @@ let package = Package(
     dependencies: [
         .package(name: "CoreFoundational", path: "../Core/CoreFoundational"),
         .package(name: "CoreTesting", path: "../Core/CoreTesting"),
-        .package(name: "CoreNetworking", path: "../CoreComponents/CoreNetworking")
+        .package(name: "CoreNetworking", path: "../CoreComponents/Sources/CoreNetworking"),
+        .package(name: "MockNetworking", path: "../CoreComponents/Sources/MockNetworking")
     ],
     targets: [
         .target(
@@ -32,6 +33,14 @@ let package = Package(
                 "StocksFeedFeature",
                 "CoreTesting",
                 "CoreNetworking",
+                "MockNetworking"
+            ],
+            resources: [
+                .copy("Resources/Stock.json"),
+                .copy("Resources/StocksFeed.json"),
+                .copy("Resources/EmptyStocksFeed.json"),
+                .copy("Resources/MalformedJSON.json"),
+                .copy("Resources/MalformedStocksFeed.json")
             ]
         ),
     ]
