@@ -15,7 +15,24 @@
       location = "container:"
       name = "Core Components">
       <FileRef
-         location = "group:Layers/Core Components/CoreNetworking">
+         location = "group:Layers/CoreComponents/MockNetworking">
+      </FileRef>
+      <FileRef
+         location = "group:Layers/CoreComponents/CoreNetworking">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Core Cash App">
+      <FileRef
+         location = "group:Layers/CoreCashApp/CashAppFoundation">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Feature">
+      <FileRef
+         location = "group:Layers/Feature/StocksFeedFeature">
       </FileRef>
    </Group>
 </Workspace>

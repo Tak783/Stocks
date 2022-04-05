@@ -14,15 +14,22 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "CoreFoundational", path: "../Core/CoreFoundational"),
-        .package(name: "CoreTesting", path: "../Core/CoreTesting")
+        .package(
+            name: "CoreFoundational",
+            path: "../Core/CoreFoundational"
+        ),
+        .package(
+            name: "CoreTesting",
+            path: "../Core/CoreTesting"
+        )
     ],
     targets: [
         .target(
             name: "CoreNetworking",
             dependencies: [
                 "CoreFoundational"
-            ]
+            ],
+            path: "Sources/CoreNetworking"
         ),
         .testTarget(
             name: "CoreNetworkingTests",
