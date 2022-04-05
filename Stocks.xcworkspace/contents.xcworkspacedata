@@ -23,6 +23,13 @@
    </Group>
    <Group
       location = "container:"
+      name = "Core Cash App">
+      <FileRef
+         location = "group:Layers/CoreCashApp/CashAppFoundation">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
       name = "Feature">
       <FileRef
          location = "group:Layers/Feature/StocksFeedFeature">
