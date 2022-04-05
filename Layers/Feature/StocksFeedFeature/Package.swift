@@ -40,7 +40,8 @@ let package = Package(
             name: "StocksFeedFeature",
             dependencies: [
                 "CoreFoundational",
-                "CoreNetworking"
+                "CoreNetworking",
+                "CashAppFoundation",
             ]
         ),
         .testTarget(
