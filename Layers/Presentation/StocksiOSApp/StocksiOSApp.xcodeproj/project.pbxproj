@@ -99,13 +99,10 @@
 		8B45368927FCC1F1004B6190 /* StocksiOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				8B45368A27FCC1F1004B6190 /* AppDelegate.swift */,
-				8B45368C27FCC1F1004B6190 /* SceneDelegate.swift */,
-				8B45368E27FCC1F1004B6190 /* ViewController.swift */,
-				8B45369027FCC1F1004B6190 /* Main.storyboard */,
-				8B45369327FCC1F5004B6190 /* Assets.xcassets */,
-				8B45369527FCC1F5004B6190 /* LaunchScreen.storyboard */,
-				8B45369827FCC1F5004B6190 /* Info.plist */,
+				8B4536BD27FCC2A7004B6190 /* Utilities */,
+				8B4536BC27FCC29C004B6190 /* Supporting Files */,
+				8B4536BB27FCC292004B6190 /* Feature */,
+				8B4536BA27FCC278004B6190 /* App */,
 			);
 			path = StocksiOSApp;
 			sourceTree = "<group>";
@@ -126,6 +123,49 @@
 				8B4536AE27FCC1F6004B6190 /* Info.plist */,
 			);
 			path = StocksiOSAppUITests;
+			sourceTree = "<group>";
+		};
+		8B4536BA27FCC278004B6190 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8B45368A27FCC1F1004B6190 /* AppDelegate.swift */,
+				8B45368C27FCC1F1004B6190 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8B4536BB27FCC292004B6190 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				8B4536BE27FCC2B6004B6190 /* Launch */,
+				8B45368E27FCC1F1004B6190 /* ViewController.swift */,
+				8B45369027FCC1F1004B6190 /* Main.storyboard */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		8B4536BC27FCC29C004B6190 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B45369827FCC1F5004B6190 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B4536BD27FCC2A7004B6190 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8B45369327FCC1F5004B6190 /* Assets.xcassets */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8B4536BE27FCC2B6004B6190 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				8B45369527FCC1F5004B6190 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A38M67G64;
-				INFOPLIST_FILE = StocksiOSApp/Info.plist;
+				INFOPLIST_FILE = "StocksiOSApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A38M67G64;
-				INFOPLIST_FILE = StocksiOSApp/Info.plist;
+				INFOPLIST_FILE = "StocksiOSApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
