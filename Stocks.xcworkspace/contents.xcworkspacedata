@@ -35,4 +35,11 @@
          location = "group:Layers/Feature/StocksFeedFeature">
       </FileRef>
    </Group>
+   <Group
+      location = "container:"
+      name = "Presentation">
+      <FileRef
+         location = "group:Layers/Presentation/StocksiOSApp/StocksiOSApp.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
