@@ -29,6 +29,10 @@ let package = Package(
         .package(
             name: "MockNetworking",
             path: "../CoreComponents/Sources/MockNetworking"
+        ),
+        .package(
+            name: "CashAppFoundation",
+            path: "../CoreCashApp/Sources/CashAppFoundation"
         )
     ],
     targets: [
@@ -45,7 +49,8 @@ let package = Package(
                 "CoreTesting",
                 "StocksFeedFeature",
                 "CoreNetworking",
-                "MockNetworking"
+                "MockNetworking",
+                "CashAppFoundation"
             ],
             resources: [
                 .copy("Resources/Stock.json"),

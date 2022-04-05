@@ -1,6 +1,6 @@
 //
 //  StocksFeedViewModelUnitTests.swift
-//  
+//
 //
 //  Created by Tak Mazarura on 04/04/2022.
 //
@@ -12,7 +12,7 @@ import CoreNetworking
 import MockNetworking
 @testable import StocksFeedFeature
 
-final class StocksFeedViewModelUnitTests {}
+final class StocksFeedViewModelUnitTests: XCTestCase {}
 
 extension StocksFeedViewModelUnitTests {
     func test_init_setsInitialVariablesCorrectly() {
@@ -125,4 +125,5 @@ extension StocksFeedViewModelUnitTests {
         }
     }
 }
+
 
