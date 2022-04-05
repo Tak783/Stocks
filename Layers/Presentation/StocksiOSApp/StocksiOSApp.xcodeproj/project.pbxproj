@@ -14,7 +14,6 @@
 		8B45369427FCC1F5004B6190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B45369327FCC1F5004B6190 /* Assets.xcassets */; };
 		8B45369727FCC1F5004B6190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B45369527FCC1F5004B6190 /* LaunchScreen.storyboard */; };
 		8B4536A227FCC1F6004B6190 /* StocksiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4536A127FCC1F6004B6190 /* StocksiOSAppTests.swift */; };
-		8B4536AD27FCC1F6004B6190 /* StocksiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4536AC27FCC1F6004B6190 /* StocksiOSAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +46,6 @@
 		8B4536A127FCC1F6004B6190 /* StocksiOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksiOSAppTests.swift; sourceTree = "<group>"; };
 		8B4536A327FCC1F6004B6190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B4536A827FCC1F6004B6190 /* StocksiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B4536AC27FCC1F6004B6190 /* StocksiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksiOSAppUITests.swift; sourceTree = "<group>"; };
-		8B4536AE27FCC1F6004B6190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +78,6 @@
 			children = (
 				8B45368927FCC1F1004B6190 /* StocksiOSApp */,
 				8B4536A027FCC1F6004B6190 /* StocksiOSAppTests */,
-				8B4536AB27FCC1F6004B6190 /* StocksiOSAppUITests */,
 				8B45368827FCC1F1004B6190 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,15 +110,6 @@
 				8B4536A327FCC1F6004B6190 /* Info.plist */,
 			);
 			path = StocksiOSAppTests;
-			sourceTree = "<group>";
-		};
-		8B4536AB27FCC1F6004B6190 /* StocksiOSAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8B4536AC27FCC1F6004B6190 /* StocksiOSAppUITests.swift */,
-				8B4536AE27FCC1F6004B6190 /* Info.plist */,
-			);
-			path = StocksiOSAppUITests;
 			sourceTree = "<group>";
 		};
 		8B4536BA27FCC278004B6190 /* App */ = {
@@ -316,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B4536AD27FCC1F6004B6190 /* StocksiOSAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
