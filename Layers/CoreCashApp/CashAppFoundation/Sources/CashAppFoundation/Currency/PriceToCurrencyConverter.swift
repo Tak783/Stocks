@@ -7,13 +7,13 @@
 
 import Foundation
 
-public struct ConvertToCurrency {
+public struct PriceToCurrencyConverter {
     public static func convert(
         priceInCents: Int,
         withCurrencyCode currencyCode: Currency
     ) -> String {
         let formatter = NumberFormatter.currencyNumberFormatter(withCurrencyCode: currencyCode)
-        let priceAsDouble = ConvertToCurrency.convertToDouble(cents: priceInCents)
+        let priceAsDouble = PriceToCurrencyConverter.convertToDouble(cents: priceInCents)
         let priceAsNumber = NSNumber(value: priceAsDouble)
         guard let priceAsCurrency = formatter.string(from: priceAsNumber) else {
             assertionFailure("Could not convert currency")
@@ -23,7 +23,7 @@ public struct ConvertToCurrency {
     }
 }
 
-extension ConvertToCurrency {
+extension PriceToCurrencyConverter {
     private static func convertToDouble(cents: Int) -> Double {
         Double(cents) / 100
     }
