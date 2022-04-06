@@ -7,8 +7,9 @@
 
 import UIKit
 import CoreFoundational
+import StocksFeedFeature
 
-final class StocksFeedViewController: UIViewController {
+final class StocksFeedViewController: StoryboardedViewController {
     @IBOutlet private var errorView: UIView!
     @IBOutlet private var tableView: UITableView! {
         didSet {
@@ -16,6 +17,18 @@ final class StocksFeedViewController: UIViewController {
         }
     }
     
+    var feedViewModel: StocksFeedViewModellable? {
+        didSet {
+            bind()
+        }
+    }
+    var tableModel = [StocksFeedItemControllable]() {
+        didSet {
+            reloadTable()
+        }
+    }
+    
+    // MARK: - View Controller Lifecylce
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
