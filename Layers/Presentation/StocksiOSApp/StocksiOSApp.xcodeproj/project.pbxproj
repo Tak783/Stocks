@@ -25,6 +25,18 @@
 		8B4536ED27FCCC0B004B6190 /* CoreTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 8B4536EC27FCCC0B004B6190 /* CoreTesting */; };
 		8BE89BFE27FCD1BA001FB1CD /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89BFD27FCD1BA001FB1CD /* UIView+Extensions.swift */; };
 		8BE89C0027FCD305001FB1CD /* UIView+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89BFF27FCD305001FB1CD /* UIView+Accessibility.swift */; };
+		8BE89C0E27FE0051001FB1CD /* StocksFeedComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C0D27FE0051001FB1CD /* StocksFeedComposer.swift */; };
+		8BE89C1127FE0082001FB1CD /* StocksFeedComposerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C1027FE0082001FB1CD /* StocksFeedComposerUnitTests.swift */; };
+		8BE89C1427FE0183001FB1CD /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C1327FE0183001FB1CD /* Storyboarded.swift */; };
+		8BE89C1627FE0195001FB1CD /* StoryboardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C1527FE0195001FB1CD /* StoryboardedViewController.swift */; };
+		8BE89C1827FE0214001FB1CD /* StocksFeedItemControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C1727FE0214001FB1CD /* StocksFeedItemControllable.swift */; };
+		8BE89C1A27FE0228001FB1CD /* StocksFeedItemTableViewControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C1927FE0228001FB1CD /* StocksFeedItemTableViewControllable.swift */; };
+		8BE89C1E27FE0289001FB1CD /* StocksFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C1C27FE0289001FB1CD /* StocksFeedTableViewCell.swift */; };
+		8BE89C1F27FE0289001FB1CD /* StocksFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BE89C1D27FE0289001FB1CD /* StocksFeedTableViewCell.xib */; };
+		8BE89C2127FE1A0A001FB1CD /* StockFeedItemViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2027FE1A0A001FB1CD /* StockFeedItemViewable.swift */; };
+		8BE89C2527FE2D5E001FB1CD /* RecipeFeedItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2427FE2D5E001FB1CD /* RecipeFeedItemController.swift */; };
+		8BE89C2927FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2827FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift */; };
+		8BE89C2C27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2B27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +66,18 @@
 		8B4536EA27FCCBA2004B6190 /* StocksFeedViewController+DSLHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StocksFeedViewController+DSLHelpers.swift"; sourceTree = "<group>"; };
 		8BE89BFD27FCD1BA001FB1CD /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		8BE89BFF27FCD305001FB1CD /* UIView+Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Accessibility.swift"; sourceTree = "<group>"; };
+		8BE89C0D27FE0051001FB1CD /* StocksFeedComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedComposer.swift; sourceTree = "<group>"; };
+		8BE89C1027FE0082001FB1CD /* StocksFeedComposerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedComposerUnitTests.swift; sourceTree = "<group>"; };
+		8BE89C1327FE0183001FB1CD /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		8BE89C1527FE0195001FB1CD /* StoryboardedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardedViewController.swift; sourceTree = "<group>"; };
+		8BE89C1727FE0214001FB1CD /* StocksFeedItemControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedItemControllable.swift; sourceTree = "<group>"; };
+		8BE89C1927FE0228001FB1CD /* StocksFeedItemTableViewControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedItemTableViewControllable.swift; sourceTree = "<group>"; };
+		8BE89C1C27FE0289001FB1CD /* StocksFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedTableViewCell.swift; sourceTree = "<group>"; };
+		8BE89C1D27FE0289001FB1CD /* StocksFeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StocksFeedTableViewCell.xib; sourceTree = "<group>"; };
+		8BE89C2027FE1A0A001FB1CD /* StockFeedItemViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFeedItemViewable.swift; sourceTree = "<group>"; };
+		8BE89C2427FE2D5E001FB1CD /* RecipeFeedItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeedItemController.swift; sourceTree = "<group>"; };
+		8BE89C2827FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedTableViewCellUnitTests.swift; sourceTree = "<group>"; };
+		8BE89C2B27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StocksFeedTableViewCell+DSLHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +175,7 @@
 		8B4536BD27FCC2A7004B6190 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8BE89C1227FE0174001FB1CD /* Storyboard */,
 				8B45369327FCC1F5004B6190 /* Assets.xcassets */,
 				8BE89BFF27FCD305001FB1CD /* UIView+Accessibility.swift */,
 			);
@@ -175,6 +200,7 @@
 		8B4536DE27FCCA9A004B6190 /* Stocks Feed */ = {
 			isa = PBXGroup;
 			children = (
+				8BE89C1B27FE026E001FB1CD /* Custom Views */,
 				8B4536E227FCCAD0004B6190 /* Controllers */,
 				8B4536DF27FCCAB8004B6190 /* Composer */,
 			);
@@ -184,6 +210,7 @@
 		8B4536DF27FCCAB8004B6190 /* Composer */ = {
 			isa = PBXGroup;
 			children = (
+				8BE89C0D27FE0051001FB1CD /* StocksFeedComposer.swift */,
 			);
 			path = Composer;
 			sourceTree = "<group>";
@@ -199,7 +226,9 @@
 		8B4536E127FCCAC6004B6190 /* Stocks Feed */ = {
 			isa = PBXGroup;
 			children = (
-				8B4536E727FCCB2C004B6190 /* StocksFeedViewControllerIntegrationTests.swift */,
+				8BE89C2727FE2E03001FB1CD /* Custom Views */,
+				8BE89C2627FE2DFD001FB1CD /* Controllers */,
+				8BE89C0F27FE006B001FB1CD /* Composer */,
 			);
 			path = "Stocks Feed";
 			sourceTree = "<group>";
@@ -207,8 +236,8 @@
 		8B4536E227FCCAD0004B6190 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B4536E327FCCAE8004B6190 /* StocksFeed.storyboard */,
-				8B4536E527FCCAFA004B6190 /* StocksFeedViewController.swift */,
+				8BE89C2327FE1B8B001FB1CD /* Feed Item */,
+				8BE89C2227FE1B7A001FB1CD /* Feed */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -216,10 +245,81 @@
 		8B4536E927FCCB8C004B6190 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8B4536EA27FCCBA2004B6190 /* StocksFeedViewController+DSLHelpers.swift */,
+				8BE89C2A27FE2EA3001FB1CD /* Domain Specific Language */,
 				8BE89BFD27FCD1BA001FB1CD /* UIView+Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8BE89C0F27FE006B001FB1CD /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				8BE89C1027FE0082001FB1CD /* StocksFeedComposerUnitTests.swift */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
+		8BE89C1227FE0174001FB1CD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8BE89C1327FE0183001FB1CD /* Storyboarded.swift */,
+				8BE89C1527FE0195001FB1CD /* StoryboardedViewController.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8BE89C1B27FE026E001FB1CD /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BE89C2027FE1A0A001FB1CD /* StockFeedItemViewable.swift */,
+				8BE89C1C27FE0289001FB1CD /* StocksFeedTableViewCell.swift */,
+				8BE89C1D27FE0289001FB1CD /* StocksFeedTableViewCell.xib */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		8BE89C2227FE1B7A001FB1CD /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				8B4536E327FCCAE8004B6190 /* StocksFeed.storyboard */,
+				8B4536E527FCCAFA004B6190 /* StocksFeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		8BE89C2327FE1B8B001FB1CD /* Feed Item */ = {
+			isa = PBXGroup;
+			children = (
+				8BE89C2427FE2D5E001FB1CD /* RecipeFeedItemController.swift */,
+				8BE89C1727FE0214001FB1CD /* StocksFeedItemControllable.swift */,
+				8BE89C1927FE0228001FB1CD /* StocksFeedItemTableViewControllable.swift */,
+			);
+			path = "Feed Item";
+			sourceTree = "<group>";
+		};
+		8BE89C2627FE2DFD001FB1CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B4536E727FCCB2C004B6190 /* StocksFeedViewControllerIntegrationTests.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8BE89C2727FE2E03001FB1CD /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BE89C2827FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		8BE89C2A27FE2EA3001FB1CD /* Domain Specific Language */ = {
+			isa = PBXGroup;
+			children = (
+				8B4536EA27FCCBA2004B6190 /* StocksFeedViewController+DSLHelpers.swift */,
+				8BE89C2B27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift */,
+			);
+			path = "Domain Specific Language";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B45369727FCC1F5004B6190 /* LaunchScreen.storyboard in Resources */,
+				8BE89C1F27FE0289001FB1CD /* StocksFeedTableViewCell.xib in Resources */,
 				8B45369427FCC1F5004B6190 /* Assets.xcassets in Resources */,
 				8B45369227FCC1F1004B6190 /* Main.storyboard in Resources */,
 				8B4536E427FCCAE8004B6190 /* StocksFeed.storyboard in Resources */,
@@ -333,11 +434,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE89C1627FE0195001FB1CD /* StoryboardedViewController.swift in Sources */,
+				8BE89C1827FE0214001FB1CD /* StocksFeedItemControllable.swift in Sources */,
+				8BE89C1E27FE0289001FB1CD /* StocksFeedTableViewCell.swift in Sources */,
+				8BE89C2527FE2D5E001FB1CD /* RecipeFeedItemController.swift in Sources */,
+				8BE89C0E27FE0051001FB1CD /* StocksFeedComposer.swift in Sources */,
 				8B45368F27FCC1F1004B6190 /* ViewController.swift in Sources */,
 				8B45368B27FCC1F1004B6190 /* AppDelegate.swift in Sources */,
 				8BE89C0027FCD305001FB1CD /* UIView+Accessibility.swift in Sources */,
+				8BE89C1A27FE0228001FB1CD /* StocksFeedItemTableViewControllable.swift in Sources */,
+				8BE89C2127FE1A0A001FB1CD /* StockFeedItemViewable.swift in Sources */,
 				8B45368D27FCC1F1004B6190 /* SceneDelegate.swift in Sources */,
 				8B4536E627FCCAFA004B6190 /* StocksFeedViewController.swift in Sources */,
+				8BE89C1427FE0183001FB1CD /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +456,10 @@
 			files = (
 				8BE89BFE27FCD1BA001FB1CD /* UIView+Extensions.swift in Sources */,
 				8B4536E827FCCB2C004B6190 /* StocksFeedViewControllerIntegrationTests.swift in Sources */,
+				8BE89C1127FE0082001FB1CD /* StocksFeedComposerUnitTests.swift in Sources */,
+				8BE89C2C27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift in Sources */,
 				8B4536EB27FCCBA2004B6190 /* StocksFeedViewController+DSLHelpers.swift in Sources */,
+				8BE89C2927FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

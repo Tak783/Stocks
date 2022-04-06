@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="204" id="KGk-i7-Jjw" customClass="StocksFeedTableViewCell" customModule="StocksiOSApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eKF-OS-OfW">
+                        <rect key="frame" x="16" y="12" width="288" height="180"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCA-QO-u5k">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ticker-label"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIm-ZW-xGE">
+                                <rect key="frame" x="0.0" y="28.5" width="288" height="20.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="name-label"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJg-Bf-P6W">
+                                <rect key="frame" x="0.0" y="57" width="288" height="20.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="currency-label"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaX-ST-PVg">
+                                <rect key="frame" x="0.0" y="85.5" width="288" height="20.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="quantity-label"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1he-bj-lJJ">
+                                <rect key="frame" x="0.0" y="114" width="288" height="20.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="current-price-label"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Current Price Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZY-mI-eO0">
+                                <rect key="frame" x="0.0" y="142.5" width="288" height="37.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="current-price-time-label"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eKF-OS-OfW" secondAttribute="bottom" constant="12" id="3JG-MI-M3z"/>
+                    <constraint firstItem="eKF-OS-OfW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Foo-fV-83m"/>
+                    <constraint firstItem="eKF-OS-OfW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="NIc-Al-h5m"/>
+                    <constraint firstItem="eKF-OS-OfW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="gDF-Zc-oEU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="currencyLabel" destination="VJg-Bf-P6W" id="f68-jJ-Xe1"/>
+                <outlet property="currentPriceLabel" destination="1he-bj-lJJ" id="P6v-uA-Jo9"/>
+                <outlet property="currentPriceTimeLabel" destination="EZY-mI-eO0" id="zfL-r6-VkA"/>
+                <outlet property="nameLabel" destination="yIm-ZW-xGE" id="DhT-XL-kxP"/>
+                <outlet property="quantityLabel" destination="SaX-ST-PVg" id="PVg-L7-L3V"/>
+                <outlet property="tickerLabel" destination="VCA-QO-u5k" id="Uop-eQ-g9H"/>
+            </connections>
+            <point key="canvasLocation" x="-55.072463768115945" y="22.098214285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
