@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import CoreTesting
 @testable import StocksiOSApp
 
 // MARK: - Domain Specific Language Var's
