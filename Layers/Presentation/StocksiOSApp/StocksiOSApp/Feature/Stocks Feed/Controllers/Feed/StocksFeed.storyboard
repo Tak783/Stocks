@@ -64,6 +64,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="errorView" destination="I4t-lC-qO4" id="jbc-j9-wbr"/>
+                        <outlet property="errorViewTitleLabel" destination="c0a-T6-Lzr" id="LYJ-vA-knd"/>
                         <outlet property="tableView" destination="As6-QE-05O" id="Uqi-g0-UV5"/>
                     </connections>
                 </viewController>

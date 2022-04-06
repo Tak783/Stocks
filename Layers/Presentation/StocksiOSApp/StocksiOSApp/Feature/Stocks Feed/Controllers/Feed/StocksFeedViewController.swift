@@ -113,7 +113,9 @@ extension StocksFeedViewController {
     }
     
     private func registerCellsForTable() {
-        
+        let bundle = Bundle(for: StocksFeedTableViewCell.self)
+        let nib = UINib(nibName: StocksFeedTableViewCell.className, bundle: bundle)
+        tableView.register(nib, forCellReuseIdentifier: StocksFeedTableViewCell.className)
     }
 }
 
@@ -149,11 +151,15 @@ extension StocksFeedViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        tableModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return .init()
+        guard let viewModel = tableModel[indexPath.row] as? StocksFeedItemTableViewControllable else {
+            assertionFailure("ViewModel should adhere to `RecipesFeedItemTableViewControllable`")
+            return .init()
+        }
+        return viewModel.view(in: tableView)
     }
 }
 
