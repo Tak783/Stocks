@@ -32,7 +32,7 @@
 		8BE89C1E27FE0289001FB1CD /* StocksFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C1C27FE0289001FB1CD /* StocksFeedTableViewCell.swift */; };
 		8BE89C1F27FE0289001FB1CD /* StocksFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BE89C1D27FE0289001FB1CD /* StocksFeedTableViewCell.xib */; };
 		8BE89C2127FE1A0A001FB1CD /* StockFeedItemViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2027FE1A0A001FB1CD /* StockFeedItemViewable.swift */; };
-		8BE89C2527FE2D5E001FB1CD /* RecipeFeedItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2427FE2D5E001FB1CD /* RecipeFeedItemController.swift */; };
+		8BE89C2527FE2D5E001FB1CD /* StockFeedItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2427FE2D5E001FB1CD /* StockFeedItemController.swift */; };
 		8BE89C2927FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2827FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift */; };
 		8BE89C2C27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2B27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift */; };
 /* End PBXBuildFile section */
@@ -71,7 +71,7 @@
 		8BE89C1C27FE0289001FB1CD /* StocksFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedTableViewCell.swift; sourceTree = "<group>"; };
 		8BE89C1D27FE0289001FB1CD /* StocksFeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StocksFeedTableViewCell.xib; sourceTree = "<group>"; };
 		8BE89C2027FE1A0A001FB1CD /* StockFeedItemViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFeedItemViewable.swift; sourceTree = "<group>"; };
-		8BE89C2427FE2D5E001FB1CD /* RecipeFeedItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeedItemController.swift; sourceTree = "<group>"; };
+		8BE89C2427FE2D5E001FB1CD /* StockFeedItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFeedItemController.swift; sourceTree = "<group>"; };
 		8BE89C2827FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedTableViewCellUnitTests.swift; sourceTree = "<group>"; };
 		8BE89C2B27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StocksFeedTableViewCell+DSLHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -284,7 +284,7 @@
 		8BE89C2327FE1B8B001FB1CD /* Feed Item */ = {
 			isa = PBXGroup;
 			children = (
-				8BE89C2427FE2D5E001FB1CD /* RecipeFeedItemController.swift */,
+				8BE89C2427FE2D5E001FB1CD /* StockFeedItemController.swift */,
 				8BE89C1727FE0214001FB1CD /* StocksFeedItemControllable.swift */,
 				8BE89C1927FE0228001FB1CD /* StocksFeedItemTableViewControllable.swift */,
 			);
@@ -430,7 +430,7 @@
 				8BE89C1627FE0195001FB1CD /* StoryboardedViewController.swift in Sources */,
 				8BE89C1827FE0214001FB1CD /* StocksFeedItemControllable.swift in Sources */,
 				8BE89C1E27FE0289001FB1CD /* StocksFeedTableViewCell.swift in Sources */,
-				8BE89C2527FE2D5E001FB1CD /* RecipeFeedItemController.swift in Sources */,
+				8BE89C2527FE2D5E001FB1CD /* StockFeedItemController.swift in Sources */,
 				8BE89C0E27FE0051001FB1CD /* StocksFeedComposer.swift in Sources */,
 				8B45368B27FCC1F1004B6190 /* AppDelegate.swift in Sources */,
 				8BE89C0027FCD305001FB1CD /* UIView+Accessibility.swift in Sources */,
