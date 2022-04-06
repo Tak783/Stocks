@@ -11,6 +11,7 @@ import StocksFeedFeature
 
 final class StocksFeedViewController: StoryboardedViewController {
     @IBOutlet private var errorView: UIView!
+    @IBOutlet private var errorViewTitleLabel: UILabel!
     @IBOutlet private var tableView: UITableView! {
         didSet {
             tableView.accessibilityIdentifier = "stocks-feed-table"
@@ -80,13 +81,39 @@ extension StocksFeedViewController {
     }
     
     private func bindLoadingErrorState() {
-        feedViewModel?.onFeedLoadError = { [weak self] error in
+        feedViewModel?.onFeedLoadError = { [weak self] errorMessage in
             guard let self = self else { return }
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
-                self.errorView.isHidden = error == .none ? true : false
+                self.showErrorView(withErrorMessage: errorMessage)
             }
         }
+    }
+}
+
+// MARK: - Bind View
+extension StocksFeedViewController {
+    private func showErrorView(withErrorMessage errorMessage: String?) {
+        var errrorViewIsHidden = true
+        if errorMessage != .none {
+            errrorViewIsHidden = false
+            errorViewTitleLabel.text = errorMessage
+        }
+        errorView.isHidden = errrorViewIsHidden
+    }
+}
+
+// MARK: - Setup Table View
+extension StocksFeedViewController {
+    private func setupTableView() {
+        registerCellsForTable()
+        setupRefreshControl()
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+    
+    private func registerCellsForTable() {
+        
     }
 }
 
@@ -100,7 +127,7 @@ extension StocksFeedViewController {
     }
     
     @objc private func refreshFeed() {
-        
+        feedViewModel?.loadFeed()
     }
     
     private func setLoadingState(_ willShowLoadingState: Bool) {
@@ -112,21 +139,6 @@ extension StocksFeedViewController {
         } else {
             tableView.refreshControl?.endRefreshing()
         }
-    }
-}
-
-
-// MARK: - UITableViewDataSource
-extension StocksFeedViewController {
-    private func setupTableView() {
-        registerCellsForTable()
-        setupRefreshControl()
-        tableView.dataSource = self
-        tableView.delegate = self
-    }
-    
-    private func registerCellsForTable() {
-        
     }
 }
 
@@ -145,6 +157,7 @@ extension StocksFeedViewController: UITableViewDataSource {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension StocksFeedViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         .init()
