@@ -64,18 +64,31 @@ extension StocksFeedViewController {
 // MARK: - Bind View
 extension StocksFeedViewController {
     private func bind() {
-        
+        title = feedViewModel?.title
+        bindLoadingState()
+        bindLoadingErrorState()
     }
     
     private func bindLoadingState() {
-        
+        feedViewModel?.onLoadingStateChange = { [weak self] isLoading in
+            guard let self = self else { return }
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.setLoadingState(isLoading)
+            }
+        }
     }
     
     private func bindLoadingErrorState() {
-        
+        feedViewModel?.onFeedLoadError = { [weak self] error in
+            guard let self = self else { return }
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.errorView.isHidden = error == .none ? true : false
+            }
+        }
     }
 }
-
 
 // MARK: - Reload Table
 extension StocksFeedViewController {

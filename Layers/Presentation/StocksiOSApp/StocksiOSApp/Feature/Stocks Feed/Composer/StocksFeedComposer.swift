@@ -13,6 +13,8 @@ final class StocksFeedComposer {
     static func compose(with service: StocksFeedServiceable, title: String) -> StocksFeedViewController {
         let viewModel = StocksFeedViewModel(stocksFeedService: service, title: title)
         let stockFeedViewController = make(with: viewModel)
+        stockFeedViewController.title = title
+        
         viewModel.onFeedLoadSuccess = adaptStocksFeedToCellControllers(for: stockFeedViewController)
         return stockFeedViewController
     }
