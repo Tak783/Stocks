@@ -11,7 +11,8 @@ public final class StocksFeedViewModel: StocksFeedViewModellable {
     public var onLoadingStateChange: Observer<Bool>?
     public var onFeedLoadError: Observer<String?>?
     public var onFeedLoadSuccess: Observer<[Stock]>?
-
+    public var onFeedLoadEmptyState: Observer<Bool>?
+    
     public var stocksFeedService: StocksFeedServiceable
     public var title: String
 
@@ -28,6 +29,7 @@ public final class StocksFeedViewModel: StocksFeedViewModellable {
             case let .success(stocks):
                 self.onFeedLoadSuccess?(stocks)
                 self.onFeedLoadError?(.none)
+                self.onFeedLoadEmptyState?(stocks.count == 0)
             case .failure:
                 self.onFeedLoadError?("Failed to Load Feed")
             }

@@ -15,10 +15,10 @@
       location = "container:"
       name = "Core Components">
       <FileRef
-         location = "group:Layers/CoreComponents/MockNetworking">
+         location = "group:Layers/CoreComponents/CoreNetworking">
       </FileRef>
       <FileRef
-         location = "group:Layers/CoreComponents/CoreNetworking">
+         location = "group:Layers/CoreComponents/MockNetworking">
       </FileRef>
    </Group>
    <Group

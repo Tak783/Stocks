@@ -14,6 +14,7 @@ public protocol StocksFeedViewModellable: AnyObject {
     var onLoadingStateChange: Observer<Bool>? { get set }
     var onFeedLoadError: Observer<String?>? { get set }
     var onFeedLoadSuccess: Observer<[Stock]>? { get set }
+    var onFeedLoadEmptyState: Observer<Bool>? { get set }
     
     var stocksFeedService: StocksFeedServiceable { get set }
 
