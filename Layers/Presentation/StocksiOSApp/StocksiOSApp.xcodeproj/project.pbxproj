@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		8B45368B27FCC1F1004B6190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B45368A27FCC1F1004B6190 /* AppDelegate.swift */; };
 		8B45368D27FCC1F1004B6190 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B45368C27FCC1F1004B6190 /* SceneDelegate.swift */; };
-		8B45368F27FCC1F1004B6190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B45368E27FCC1F1004B6190 /* ViewController.swift */; };
-		8B45369227FCC1F1004B6190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B45369027FCC1F1004B6190 /* Main.storyboard */; };
 		8B45369427FCC1F5004B6190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B45369327FCC1F5004B6190 /* Assets.xcassets */; };
 		8B45369727FCC1F5004B6190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B45369527FCC1F5004B6190 /* LaunchScreen.storyboard */; };
 		8B4536CF27FCC68D004B6190 /* StocksFeedFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 8B4536CE27FCC68D004B6190 /* StocksFeedFeature */; };
@@ -53,8 +51,6 @@
 		8B45368727FCC1F1004B6190 /* StocksiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B45368A27FCC1F1004B6190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B45368C27FCC1F1004B6190 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8B45368E27FCC1F1004B6190 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B45369127FCC1F1004B6190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B45369327FCC1F5004B6190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B45369627FCC1F5004B6190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B45369827FCC1F5004B6190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -158,8 +154,6 @@
 			children = (
 				8B4536DE27FCCA9A004B6190 /* Stocks Feed */,
 				8B4536BE27FCC2B6004B6190 /* Launch */,
-				8B45368E27FCC1F1004B6190 /* ViewController.swift */,
-				8B45369027FCC1F1004B6190 /* Main.storyboard */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -415,7 +409,6 @@
 				8B45369727FCC1F5004B6190 /* LaunchScreen.storyboard in Resources */,
 				8BE89C1F27FE0289001FB1CD /* StocksFeedTableViewCell.xib in Resources */,
 				8B45369427FCC1F5004B6190 /* Assets.xcassets in Resources */,
-				8B45369227FCC1F1004B6190 /* Main.storyboard in Resources */,
 				8B4536E427FCCAE8004B6190 /* StocksFeed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,7 +432,6 @@
 				8BE89C1E27FE0289001FB1CD /* StocksFeedTableViewCell.swift in Sources */,
 				8BE89C2527FE2D5E001FB1CD /* RecipeFeedItemController.swift in Sources */,
 				8BE89C0E27FE0051001FB1CD /* StocksFeedComposer.swift in Sources */,
-				8B45368F27FCC1F1004B6190 /* ViewController.swift in Sources */,
 				8B45368B27FCC1F1004B6190 /* AppDelegate.swift in Sources */,
 				8BE89C0027FCD305001FB1CD /* UIView+Accessibility.swift in Sources */,
 				8BE89C1A27FE0228001FB1CD /* StocksFeedItemTableViewControllable.swift in Sources */,
@@ -474,14 +466,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8B45369027FCC1F1004B6190 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B45369127FCC1F1004B6190 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8B45369527FCC1F5004B6190 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

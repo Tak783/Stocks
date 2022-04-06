@@ -12,6 +12,7 @@ import StocksFeedFeature
 final class StocksFeedViewController: StoryboardedViewController {
     @IBOutlet private var errorView: UIView!
     @IBOutlet private var errorViewTitleLabel: UILabel!
+    @IBOutlet private var stockFeedEmptyMessageLabel: UILabel!
     @IBOutlet private var tableView: UITableView! {
         didSet {
             tableView.accessibilityIdentifier = "stocks-feed-table"
@@ -49,8 +50,8 @@ extension StocksFeedViewController {
     private func makeAccessible() {
         tableView.makeViewAccessible(
             isAccessibilityElement: true,
-            accessibilityLabel: "Localized.Stock.feed.accessibilityLabel",
-            accessibilityHint: "Localized.Stock.feed.accessibilityHint"
+            accessibilityLabel: "Stock Feed",
+            accessibilityHint: "Shows a feed of stocks"
         )
     }
     
@@ -68,6 +69,7 @@ extension StocksFeedViewController {
         title = feedViewModel?.title
         bindLoadingState()
         bindLoadingErrorState()
+        bindLoadingEmptyState()
     }
     
     private func bindLoadingState() {
@@ -89,17 +91,32 @@ extension StocksFeedViewController {
             }
         }
     }
+    
+    private func bindLoadingEmptyState() {
+        feedViewModel?.onFeedLoadEmptyState = { [weak self] isEmpty in
+            guard let self = self else { return }
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.showEmptyFeedState(isEmpty)
+            }
+        }
+    }
 }
 
 // MARK: - Bind View
 extension StocksFeedViewController {
-    private func showErrorView(withErrorMessage errorMessage: String?) {
+    private func showErrorView(withErrorMessage errorMessage: String?, backgroundColor: UIColor = .red) {
         var errrorViewIsHidden = true
         if errorMessage != .none {
             errrorViewIsHidden = false
             errorViewTitleLabel.text = errorMessage
         }
         errorView.isHidden = errrorViewIsHidden
+        errorView.backgroundColor = backgroundColor
+    }
+    
+    private func showEmptyFeedState(_ isEmpty: Bool) {
+        showErrorView(withErrorMessage: isEmpty ? "Stock feed returned was empty\n Pull to refresh feed" : .none, backgroundColor: .systemBlue)
     }
 }
 
@@ -156,7 +173,7 @@ extension StocksFeedViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let viewModel = tableModel[indexPath.row] as? StocksFeedItemTableViewControllable else {
-            assertionFailure("ViewModel should adhere to `RecipesFeedItemTableViewControllable`")
+            assertionFailure("ViewModel should adhere to `StocksFeedItemTableViewControllable`")
             return .init()
         }
         return viewModel.view(in: tableView)
