@@ -1,8 +1,8 @@
 # Stocks App
-A simple stocks feed app
+A simple stocks feed iOS application 
 
 ## Overview 
-A simple stocks app that shows a list of stock symbols and prices for a set of stocks parsed from JSON endpoints. The App
+A simple stocks iOS app that shows a list of stock symbols and prices for a set of stocks parsed from JSON endpoints. The App:
 1. Handles loading, error and empty states
 2. Displays the returned stocks in a list 
 
