@@ -90,6 +90,7 @@ There are many optimisations and improvements I can make across the project acro
 * Strings were not localised but should be 
 * Accessibilty was considered in some places but not all. In production it would be a first class citizen but for the purpose of this project it is not.
 * There are so many other things in the actual code that could be improved i.e. moving functions resuable code int extensions or helpers or things putting items such as `UIView+Accessibility` into the appropriate layer modules.
+* Commits, there is a section in branch `P1-00003` where the commit messages change in style and miss the storyID. This is a function of of context swithing from day job commits to evening work. I would improve rename the commit messages in a rebase. 
 
 ##User Story
 Load Stocks Feed: Load and shows a list of stock symbols and prices for a set of stocks parsed from JSON endpoints
