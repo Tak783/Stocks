@@ -17,9 +17,11 @@ A simple stocks app that shows a list of stock symbols and prices for a set of s
 * Each layer project(framework) can be built and be tested on its own including the Presentation Layer Application targets.
 * There are five layers: Core, Core Components, Core Cash App, Feature and the Presentation layer (Which contains the application targets)
 * There is a sixth layer: CorePresentation which was not added
-* Layers dependencies are used vertically: each module can import only from layers below 
+* Layers dependencies are used vertically: each module can import only from layers below or on the same level
 * The core design pattern used in the Feature layer is MVVM. This is then used in the presentation. 
 * MVVM was chosen becuase it allows us to easily separate responsibilities.
+
+<img width="1277" alt="124187612-fd632100-dab5-11eb-9b23-878fcc872c5a" src="https://user-images.githubusercontent.com/3129728/162150114-28743daa-3409-47fd-9dcc-af9722bcab8f.png">
 
 ### Platform Agnostic Components (Reasoning)
 Every layer that exists below the presentation layer is built with platform-agnostic components for the following reasons.
@@ -87,12 +89,12 @@ There are many optimisations and improvements I can make across the project acro
 * A sixth layer CorePresentation could be added. It would sit inbetween the Feature and Presention layer. It would house modules such as CoreUIKit which will contain extensions to UIKit. Same could be done for Watch, and SwiftUI.
 * Strings were not localised but should be 
 * Accessibilty was considered in some places but not all. In production it would be a first class citizen but for the purpose of this project it is not.
-* There are so many  things in the actual code that could be improved i.e. moving functions resuable code int extensions or helpers or things putting items such as `UIView+Accessibility` into the appropriate layer modules.
+* There are so many other things in the actual code that could be improved i.e. moving functions resuable code int extensions or helpers or things putting items such as `UIView+Accessibility` into the appropriate layer modules.
 
 ##User Story
 Load Stocks Feed: Load and shows a list of stock symbols and prices for a set of stocks parsed from JSON endpoints
 
-**Acceptance Criteria **
+**Acceptance Criteria**
 AC1: Feed shows loading indicator when the feed API call starts  
 Given that as user I have opened the app
 Then I should see a loading indicator as the feed loads 
