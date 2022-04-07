@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Core">
+      <FileRef
+         location = "group:Layers/Core/CoreTesting">
+      </FileRef>
+      <FileRef
+         location = "group:Layers/Core/CoreFoundational">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Core Components">
+      <FileRef
+         location = "group:Layers/CoreComponents/CoreNetworking">
+      </FileRef>
+      <FileRef
+         location = "group:Layers/CoreComponents/MockNetworking">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Core Cash App">
+      <FileRef
+         location = "group:Layers/CoreCashApp/CashAppFoundation">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Feature">
+      <FileRef
+         location = "group:Layers/Feature/StocksFeedFeature">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Presentation">
+      <FileRef
+         location = "group:Layers/Presentation/StocksiOSApp/StocksiOSApp.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
