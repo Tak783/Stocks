@@ -10,3 +10,7 @@ About
 
 Warning 
 * This is to be kept platform agnostic. No UIKit or SwiftUI code must be in this feature to keep coupling low and keep flexibility high
+
+### Warnings
+Tests are **only** to be run on mac
+

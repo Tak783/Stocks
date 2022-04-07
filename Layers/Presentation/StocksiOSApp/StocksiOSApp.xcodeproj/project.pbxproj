@@ -21,7 +21,6 @@
 		8B4536E827FCCB2C004B6190 /* StocksFeedViewControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4536E727FCCB2C004B6190 /* StocksFeedViewControllerIntegrationTests.swift */; };
 		8B4536EB27FCCBA2004B6190 /* StocksFeedViewController+DSLHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4536EA27FCCBA2004B6190 /* StocksFeedViewController+DSLHelpers.swift */; };
 		8B4536ED27FCCC0B004B6190 /* CoreTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 8B4536EC27FCCC0B004B6190 /* CoreTesting */; };
-		8BE89BFE27FCD1BA001FB1CD /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89BFD27FCD1BA001FB1CD /* UIView+Extensions.swift */; };
 		8BE89C0027FCD305001FB1CD /* UIView+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89BFF27FCD305001FB1CD /* UIView+Accessibility.swift */; };
 		8BE89C0E27FE0051001FB1CD /* StocksFeedComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C0D27FE0051001FB1CD /* StocksFeedComposer.swift */; };
 		8BE89C1127FE0082001FB1CD /* StocksFeedComposerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C1027FE0082001FB1CD /* StocksFeedComposerUnitTests.swift */; };
@@ -35,6 +34,8 @@
 		8BE89C2527FE2D5E001FB1CD /* StockFeedItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2427FE2D5E001FB1CD /* StockFeedItemController.swift */; };
 		8BE89C2927FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2827FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift */; };
 		8BE89C2C27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE89C2B27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift */; };
+		B108296327FEE2B600B866B5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108296127FEE2B600B866B5 /* UIView+Extensions.swift */; };
+		B108296427FEE2B600B866B5 /* XCTestCase+UIKitAssertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108296227FEE2B600B866B5 /* XCTestCase+UIKitAssertions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +61,6 @@
 		8B4536E527FCCAFA004B6190 /* StocksFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedViewController.swift; sourceTree = "<group>"; };
 		8B4536E727FCCB2C004B6190 /* StocksFeedViewControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedViewControllerIntegrationTests.swift; sourceTree = "<group>"; };
 		8B4536EA27FCCBA2004B6190 /* StocksFeedViewController+DSLHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StocksFeedViewController+DSLHelpers.swift"; sourceTree = "<group>"; };
-		8BE89BFD27FCD1BA001FB1CD /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		8BE89BFF27FCD305001FB1CD /* UIView+Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Accessibility.swift"; sourceTree = "<group>"; };
 		8BE89C0D27FE0051001FB1CD /* StocksFeedComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedComposer.swift; sourceTree = "<group>"; };
 		8BE89C1027FE0082001FB1CD /* StocksFeedComposerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedComposerUnitTests.swift; sourceTree = "<group>"; };
@@ -74,6 +74,8 @@
 		8BE89C2427FE2D5E001FB1CD /* StockFeedItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFeedItemController.swift; sourceTree = "<group>"; };
 		8BE89C2827FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksFeedTableViewCellUnitTests.swift; sourceTree = "<group>"; };
 		8BE89C2B27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StocksFeedTableViewCell+DSLHelpers.swift"; sourceTree = "<group>"; };
+		B108296127FEE2B600B866B5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		B108296227FEE2B600B866B5 /* XCTestCase+UIKitAssertions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+UIKitAssertions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,8 +241,8 @@
 		8B4536E927FCCB8C004B6190 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B108296027FEE29700B866B5 /* Extensions */,
 				8BE89C2A27FE2EA3001FB1CD /* Domain Specific Language */,
-				8BE89BFD27FCD1BA001FB1CD /* UIView+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -314,6 +316,15 @@
 				8BE89C2B27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift */,
 			);
 			path = "Domain Specific Language";
+			sourceTree = "<group>";
+		};
+		B108296027FEE29700B866B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B108296127FEE2B600B866B5 /* UIView+Extensions.swift */,
+				B108296227FEE2B600B866B5 /* XCTestCase+UIKitAssertions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,9 +457,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE89BFE27FCD1BA001FB1CD /* UIView+Extensions.swift in Sources */,
+				B108296327FEE2B600B866B5 /* UIView+Extensions.swift in Sources */,
 				8B4536E827FCCB2C004B6190 /* StocksFeedViewControllerIntegrationTests.swift in Sources */,
 				8BE89C1127FE0082001FB1CD /* StocksFeedComposerUnitTests.swift in Sources */,
+				B108296427FEE2B600B866B5 /* XCTestCase+UIKitAssertions.swift in Sources */,
 				8BE89C2C27FE2EB5001FB1CD /* StocksFeedTableViewCell+DSLHelpers.swift in Sources */,
 				8B4536EB27FCCBA2004B6190 /* StocksFeedViewController+DSLHelpers.swift in Sources */,
 				8BE89C2927FE2E1A001FB1CD /* StocksFeedTableViewCellUnitTests.swift in Sources */,

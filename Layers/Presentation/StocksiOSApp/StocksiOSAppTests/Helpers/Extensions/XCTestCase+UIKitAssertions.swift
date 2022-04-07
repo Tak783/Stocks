@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import UIKit
 
 extension XCTestCase {
     public func assert(
