@@ -20,7 +20,7 @@ final class StockFeedItemViewModelTests: XCTestCase {
             XCTAssertEqual(sut.name, "Twitter, Inc.")
             XCTAssertEqual(sut.currency, "USD")
             XCTAssertEqual(sut.currentPrice, "US$38.33")
-            XCTAssertEqual(sut.quantity, "25")
+            XCTAssertEqual(sut.quantity, "Quantity: 25")
             XCTAssertEqual(sut.currentPriceTime, "11/11/2021, 19:08")
         } catch {
             XCTFail(error.localizedDescription)

@@ -20,7 +20,7 @@ public final class StockFeedItemViewModel: StockFeedItemViewModellable {
         ticker = stock.ticker
         name = stock.name
         currency = stock.currency
-        quantity = "Quanitity: \(String(stock.quantity ?? 0))"
+        quantity = "Quantity: \(String(stock.quantity ?? 0))"
         currentPrice = PriceToCurrencyConverter.convert(
             priceInCents: stock.currentPriceCents,
             withCurrencyCode: Self.currency(fromCode: stock.currency)
